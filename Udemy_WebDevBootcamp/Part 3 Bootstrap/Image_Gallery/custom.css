@@ -1,0 +1,64 @@
+.image1 {
+    background-image: url(https://images.unsplash.com/photo-1538675274373-3a056523b602?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b33d86c9c58dc31bdf59d4b34aed5ca7&auto=format&fit=crop&w=500&q=60);
+}
+
+.image2 {
+    background-image: url(https://images.unsplash.com/photo-1538685385324-aa60029d7d3f?ixlib=rb-0.3.5&s=9863aaae312979e07a30cf4f91a339a5&auto=format&fit=crop&w=968&q=80);
+}
+
+.image3 {
+    background-image: url(https://images.unsplash.com/photo-1518081461904-9d8f136351c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a815e999d0f593c8c8bbcb6473b0d39&auto=format&fit=crop&w=1077&q=80);
+}
+
+.image4 {
+    background-image: url(https://images.unsplash.com/photo-1518364538800-6bae3c2ea0f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=193d96d744872badcbbf5bdfc7b347f2&auto=format&fit=crop&w=1951&q=80);
+}
+
+.image5 {
+    background-image: url(https://images.unsplash.com/photo-1530912162784-514d437f58f7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90276a348fc4988b800e8531daa45872&auto=format&fit=crop&w=675&q=80);
+}
+
+.image6 {
+    background-image: url(https://images.unsplash.com/photo-1538678219180-f423794aa26c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b85ea6fdc6203a08240f6e565760a765&auto=format&fit=crop&w=1868&q=80);
+}
+
+.image7 {
+    background-image: url(https://images.unsplash.com/photo-1538708027031-6955608d3c26?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2b37354a84c9fc6e0e1d71976c28567d&auto=format&fit=crop&w=967&q=80);
+}
+
+.image8 {
+    background-image: url(https://images.unsplash.com/photo-1538729247193-1256701f9ef5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ff548421755d700a1fdfeec098c32345&auto=format&fit=crop&w=1950&q=80);
+}
+
+.image9 {
+    background-image: url(https://images.unsplash.com/photo-1538787371639-6bd01dfe29b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=313705dbf83a36c9384034d9a6a4e7b8&auto=format&fit=crop&w=1050&q=80);
+}
+
+
+.image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+.navbar-inverse {
+    background-color: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}

@@ -1,0 +1,63 @@
+<!-- Note: used an internal style sheet purely for demonstrative purposes... very bad code design -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Grid</title>
+    <style type="text/css">
+    .orange {
+        background-color: blue;
+        border: 2px solid red;
+        color: white;
+    }
+
+    .red {
+        background-color: black;
+        border: 2px solid red;
+        color: white;
+    }
+
+    .pink {
+        background-color: pink;
+        border: 2px solid purple;
+        color: white;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../NavBar/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-3 orange">HALF 1</div>
+            <div class="col-lg-6 col-md-3 orange">HALF 2</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+            <div class="col-lg-1 orange">Hey</div>
+        </div>
+        <!-- for nesting purposes -->
+        <div class="row">
+            <div class="col-lg-6 red">
+                <div class="row">
+                    <div class="col-lg-4 pink">1</div>
+                    <div class="col-lg-4 pink">2</div>
+                    <div class="col-lg-4 pink">3</div>
+                </div>
+            </div>
+            <div class="col-lg-6 red">Second Half</div>
+        </div>
+    </div>
+</body>
+
+</html>
