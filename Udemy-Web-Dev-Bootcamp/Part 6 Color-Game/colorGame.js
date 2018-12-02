@@ -1,12 +1,15 @@
 //generate random colours
-const colors = generateRandomColors(6);
-const pickedColor = pickColor();
+let numSquares = 6;
+let colors = generateRandomColors(numSquares);
+let pickedColor = pickColor();
 const colorDisplay = document.getElementById("colorDisplay");
 colorDisplay.textContent = pickedColor;
 const messageDisplay = document.querySelector("#message");
 const header = document.querySelector("h1");
 const resetButton = document.querySelector("#reset");
 const squares = document.querySelectorAll(".square");
+const easyBtn = document.querySelector("#easyBtn");
+const hardBtn = document.querySelector("#hardBtn");
 
 for (let i = 0; i < squares.length; i++) {
     //add initial background colors
@@ -57,5 +60,52 @@ function randomColor() {
 }
 
 resetButton.addEventListener("click", function () {
-    alert("clicked reset button");
-})
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    for (let i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = colors[i];
+    }
+    resetButton.innerHTML = "New Colors";
+    header.style.backgroundColor = "#232323";
+    messageDisplay.textContent = "";
+});
+
+easyBtn.addEventListener("click", function () {
+    easyBtn.classList.add("selected");
+    hardBtn.classList.remove("selected");
+    numSquares = 3;
+
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    header.style.backgroundColor = "#232323";
+    resetButton.innerHTML = "New Colors";
+    messageDisplay.textContent = "";
+    for (let i = 0; i < squares.length; i++) {
+        if (colors[i]) {
+            squares[i].style.backgroundColor = colors[i];
+        }
+        else {
+            squares[i].style.display = "none";
+
+        }
+    }
+});
+
+hardBtn.addEventListener("click", function () {
+    hardBtn.classList.add("selected");
+    easyBtn.classList.remove("selected");
+    numSquares = 6;
+
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    header.style.backgroundColor = "#232323";
+    resetButton.innerHTML = "New Colors";
+    messageDisplay.textContent = "";
+    for (let i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = colors[i];
+        squares[i].style.display = "block";
+    }
+});
