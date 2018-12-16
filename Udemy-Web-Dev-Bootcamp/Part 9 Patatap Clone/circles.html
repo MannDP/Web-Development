@@ -7,17 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Circles</title>
     <script type="text/javascript" src="paper-full.js"></script>
-    <!-- Define inlined PaperScript associate it with myCanvas -->
+
     <script type="text/paperscript" canvas="myCanvas">
-        generateArray = function() {
-                for (var i = 0; i < 10; i++) {
-                for (var j = 0; j < 10; j++) {
-                    myCircle = new Path.Circle(new Point(j*100, i*100), 10).fillColor = new Color(Math.random(),  Math.random(),  Math.random());    
-                }
-            } 
+        function onKeyDown(event) {
+            var maxPoint = new Point(view.size.width, view.size.height); 
+            var randomPoint = Point.random();
+            var point = maxPoint * randomPoint; 
+            new Path.Circle(point, 10).fillColor = "orange";
         }
 
-        generateArray(); 
     </script>
     <link rel="stylesheet" type="text/css" href="circles.css">
 </head>
