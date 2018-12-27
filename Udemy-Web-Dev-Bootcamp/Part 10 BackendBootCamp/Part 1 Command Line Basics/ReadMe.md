@@ -1,4 +1,4 @@
-#Command Line Basics Exercise
+# Command Line Basics Exercise
 
 -   Make a new folder named "Animals"
 -   Inside of "Animals" add 2 directories: "AwesomeAnimals" and "SketchyAnimals"
