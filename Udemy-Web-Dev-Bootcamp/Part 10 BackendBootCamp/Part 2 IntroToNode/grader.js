@@ -5,7 +5,7 @@ function average(arr) {
             sum += arr[i];
         }
         let avg = sum / arr.length;
-        console.log(Math.round(avg));
+        return Math.round(avg);
     }
     else {
         console.log("Error: input does not match specifications");
@@ -14,7 +14,7 @@ function average(arr) {
 }
 
 const scores = [90, 98, 89, 100, 100, 86, 94];
-average(scores);
+console.log(average(scores));
 
 const scores2 = [40, 65, 77, 82, 80, 54, 73, 63, 95, 49];
-average(scores2); 
+console.log(average(scores2)); 
