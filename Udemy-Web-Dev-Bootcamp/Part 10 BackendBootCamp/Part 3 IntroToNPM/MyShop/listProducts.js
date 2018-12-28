@@ -12,13 +12,13 @@ function generateFakeProducts(numProducts) {
 }
 
 function prettyPrint(num) {
-    const products = generateFakeProducts(num);
-    products.forEach(function (product) {
+    console.log("====================");
+    console.log("WELCOME TO MY SHOP!");
+    console.log("====================");
+
+    generateFakeProducts(num).forEach(function (product) {
         console.log(product.name + " - " + product.price);
     });
 }
 
-console.log("====================");
-console.log("WELCOME TO MY SHOP!");
-console.log("====================");
 prettyPrint(10); 
