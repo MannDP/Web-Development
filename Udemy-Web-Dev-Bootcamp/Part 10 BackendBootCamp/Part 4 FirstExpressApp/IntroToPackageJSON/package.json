@@ -1,0 +1,15 @@
+{
+  "name": "introtopackagejson",
+  "version": "1.0.0",
+  "description": "Very simple package.json",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mann Patel",
+  "license": "MIT",
+  "dependencies": {
+    "cat-me": "^1.0.3",
+    "expres": "0.0.5"
+  }
+}
