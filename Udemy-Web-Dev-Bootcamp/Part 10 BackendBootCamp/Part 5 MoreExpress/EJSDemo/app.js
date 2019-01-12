@@ -2,13 +2,16 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+app.use(express.static("public"));
+app.set("view engine", "ejs");
+
 app.get("/", (req, res) => {
-	res.render("home.ejs");
+	res.render("home");
 });
 
 app.get("/fallinlovewith/:object", (req, res) => {
 	const thing = req.params.object;
-	res.render("love.ejs", { thing: thing });
+	res.render("love", { thing: thing });
 });
 
 app.get("/posts", (req, res) => {
@@ -23,7 +26,7 @@ app.get("/posts", (req, res) => {
 			author: "Donald Bradman"
 		}
 	];
-	res.render("posts.ejs", { posts: posts });
+	res.render("posts", { posts: posts });
 });
 
 app.listen(port, undefined, () =>
